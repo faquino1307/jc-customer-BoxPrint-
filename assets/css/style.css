@@ -36713,3 +36713,7 @@ START: Footer CSS
 .h1-brand__content>h2 {
   color: #fff
 }
+
+.white-font a{
+  color:#FFF !important;
+}
