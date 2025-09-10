@@ -89,12 +89,12 @@
         height: "100%",
         objectFit: "cover",
         zIndex: -1,
-        
+        filter: 'brightness(40%)'
       });
 
       // Asegurar que el contenedor sea relativo
       //$(this).css("position", "relative");
-      $(this).css({'background-color':' rgba(0, 0, 0, 0.1) !important','position':'relative'});
+      $(this).css({'position':'relative'});
       $(this).prepend(video);
     } else {
       // Si es imagen, usa background-image normal
