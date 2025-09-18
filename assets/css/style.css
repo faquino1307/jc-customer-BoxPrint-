@@ -165,6 +165,18 @@ work page css
   font-weight: 500;
 }
 
+@font-face {
+  font-family: "dincondensed-family";
+  src: url("../fonts/D-DINCondensed.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "dincondensed-bold-family";
+  src: url("../fonts/D-DINCondensed-Bold.otf");
+  font-weight: 700;
+}
+
 :root {
   --font_dmsans: "DM Sans", sans-serif;
   --font_instrumentsans: "Instrument Sans", sans-serif;
@@ -25386,6 +25398,21 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   transition: all 0.4s;
 }
 
+.single-team-member-3-1::before {
+  
+  background-color: #9479FF;
+}
+
+.single-team-member-3-2::before {
+  
+  background-color: #ff5e14;
+}
+
+.single-team-member-3-3::before {
+  
+  background-color: #FFA6D6;
+}
+
 .single-team-member-3:hover::before {
   opacity: 0.85;
   visibility: visible;
@@ -36713,7 +36740,18 @@ START: Footer CSS
 .h1-brand__content>h2 {
   color: #fff
 }
-
+.white-font{
+  color: white !important;
+}
+.purple-1-font{
+  color: #3c4461 !important;
+}
 .white-font a{
   color:#FFF !important;
+}
+.to-din-font{
+  font-family: 'dincondensed-family', sans-serif !important;
+}
+.to-din-bold-font{
+  font-family: 'dincondensed-bold-family', sans-serif !important;
 }
