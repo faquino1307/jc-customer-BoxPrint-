@@ -12405,7 +12405,7 @@ only screen and (max-width: 1919px) {
 
 .portfolio-3__content-title {
   opacity: 0;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 1.05;
   color: var(--white);
   transform: translateY(-130px);
@@ -22759,8 +22759,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .h1-brand__content h2 {
-  font-size: 172px;
+  font-size: 86px;
   line-height: 106%;
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--rr-heading-primary);
   font-family: var(--rr-ff-grotesk);
@@ -22813,7 +22814,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .brand-slider-padding {
-  padding: 60px 0px;
+  padding: 20px 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px),
@@ -36754,4 +36755,8 @@ START: Footer CSS
 }
 .to-din-bold-font{
   font-family: 'dincondensed-bold-family', sans-serif !important;
+}
+
+.logo-pb-white-svg svg path {
+    fill: white; /* Cambia el color */
 }
