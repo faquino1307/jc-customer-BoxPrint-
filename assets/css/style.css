@@ -19211,7 +19211,7 @@ only screen and (max-width: 1919px) {
 }
 
 .header-area__inner>*:nth-child(2) {
-  margin-inline-end: auto;
+  margin-inline-end: none;
 }
 
 @media (min-width: 1800px) {
@@ -19295,7 +19295,8 @@ only screen and (max-width: 1919px) {
 
 .header-area .header__navicon i {
   font-size: 22px;
-  color: var(--primary);
+  /*color: var(--primary);*/
+  color: white;
 }
 
 /* header area 2 style  */
@@ -36759,4 +36760,21 @@ START: Footer CSS
 
 .logo-pb-white-svg svg path {
     fill: white; /* Cambia el color */
+}
+
+.mobile-menu.mean-container .mean-nav ul li a{
+  color: var(--primary) !important;
+}
+.header-area__inner {
+  display: flex;
+  align-items: center;   /* Alinea verticalmente */
+  justify-content: space-between; /* Distribuye logo a la izquierda y nav a la derecha */
+}
+
+.header__nav {
+  margin-left: auto; /* Empuja el nav hacia la derecha */
+}
+
+.header-area__inner>*:nth-child(2) {
+    margin-inline-end: none;
 }
