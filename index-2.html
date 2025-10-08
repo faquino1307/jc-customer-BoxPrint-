@@ -128,7 +128,7 @@
                             <ul class="white-font">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#diseno">Diseño</a></li>
-                                <li><a href="#trabajos">Trabajo</a></li>
+                                <li><a href="#trabajos">Servicios</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -189,7 +189,7 @@
                                 <div class="swiper-slide">
                                     <div class="h1-brand__content ">
                                         <h2 class="to-din-font purple-1-font" style="font-weight: bold;">PROMOCIONALES
-                                            Y<br> DISEÑO.</h2>
+                                            Y<br> DISEÑO</h2>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -207,29 +207,89 @@
                 </section>
                 <style>
                     .swiper {
-  padding: 20px 0;
-}
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-.single-team-member-3 {
-  width: 250px; /* ancho de cada tarjeta */
-  height: 200px;
-  border-radius: 12px;
-  background: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+                        padding: 20px 0;
+                    }
 
+                    /* Flechas personalizadas fuera del carrusel */
+                    .custom-prev,
+                    .custom-next {
+                        position: absolute;
+                        top: 60% !important;
+                        transform: translateY(-50%);
+                        z-index: 10;
+                        /*background: rgba(255, 255, 255, 0.95);*/
+                        color: #000;
+                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        /*box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);*/
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    }
+
+                    /* Flecha izquierda */
+                    .custom-prev {
+                        left: 40px !important;
+                        /* fuera del carrusel */
+                    }
+
+                    /* Flecha derecha */
+                    .custom-next {
+                        right: 40px !important;
+                        /* fuera del carrusel */
+                    }
+
+                    /* Hover */
+                    /*.custom-prev:hover,
+                    .custom-next:hover {
+                        background: #ff6600;
+                        color: #fff;
+                        transform: translateY(-50%) scale(1.1);
+                    }*/
+
+                    /* Responsivo: acerca un poco las flechas en móviles */
+                    @media (max-width: 992px) {
+                        .custom-prev,
+                        .custom-next {
+                            top: 60% !important;
+                        }
+                        .custom-prev {
+                            left: -30px;
+                        }
+
+                        .custom-next {
+                            right: -30px;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+
+                        .custom-prev,
+                        .custom-next {
+                            width: 35px;
+                            height: 35px;
+                            top: 160% !important;
+                        }
+
+                        .custom-prev {
+                            left: -20px;
+                        }
+
+                        .custom-next {
+                            right: -20px;
+                        }
+                    }
                 </style>
                 <section id="trabajos" class="team-wrapper fix section-bg section-padding">
                     <div class="container rr-container-1230">
                         <h2 class="to-din-bold-font" style="font-size: 60px;">
                             Servicios
                         </h2>
-
+                        <div class="swiper-button-prev custom-prev"></div>
+                        <div class="swiper-button-next custom-next"></div>
                         <!-- Swiper -->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
@@ -295,9 +355,7 @@
                                 </div>
                             </div>
 
-                            <!-- Flechas de navegación -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+
 
                             <!-- Paginación opcional -->
                             <div class="swiper-pagination"></div>
@@ -485,33 +543,33 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js?v=1.0"></script>
     <!-- SwiperJS CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,  /* cuántos servicios mostrar al mismo tiempo */
-    spaceBetween: 20,  /* espacio entre tarjetas */
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  });
-</script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,  /* cuántos servicios mostrar al mismo tiempo */
+            spaceBetween: 20,  /* espacio entre tarjetas */
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    </script>
 
 
 </body>
