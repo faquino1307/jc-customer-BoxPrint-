@@ -125,7 +125,7 @@
                     </div>
                     <div class="header__nav">
                         <nav class="main-menu">
-                            <ul class="bp-gray-font">
+                            <ul class="white-font">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#diseno">Diseño</a></li>
                                 <li><a href="#trabajos">Servicios</a></li>
@@ -151,17 +151,17 @@
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide">
-                                <div class="portfolio-3__item">
+                                <div class="portfolio-3__item" data-background="assets/imgs/teaser.mp4">
                                     <div class="slide-content">
                                     </div>
                                     <div class="container">
                                         <div class="portfolio-3__content">
-                                            <h2 class="portfolio-3__content-title to-din-bold-font black-font"><a>
+                                            <h2 class="portfolio-3__content-title to-din-bold-font white-font"><a>
                                                     IMPRIME
-                                                    <br>PERSONALIZA</a>
-                                                <br>DESTACA</a>
+                                                    <br>PERSONALIZA
+                                                <br>DESTACA
                                             </h2>
-                                            <p class="to-din-font bp-gray-font">Soluciones creativas en artículos
+                                            <p class="to-din-font white-font">Soluciones creativas en artículos
                                                 <br>promocionales y materiales impresos
                                             </p>
                                             <p class="to-din-font mt-4 p-3 white-font purple-1-font bp-btn-primary"
@@ -180,7 +180,7 @@
 
                 <!-- Brand Slider start -->
                 <section id='diseno' class="h1-brand__area h1-brand section-space design-promo"
-                    style="padding-top: 0px !important; padding-bottom: 0px !important;">
+                    style="padding-top: 40px !important; padding-bottom: 40px !important;">
 
                     <div class="container-fluid gx-0">
                         <div class="swiper h1-brand__slider brand-border ">
@@ -188,16 +188,16 @@
                                 class="swiper-wrapper brand-slider-padding smooth-slide-transtion d-flex align-items-center align-content-center ">
                                 <div class="swiper-slide">
                                     <div class="h1-brand__content ">
-                                        <h2 class="to-din-font bp-gray-font" style="font-weight: bold;">PROMOCIONALES
+                                        <h2 class="to-din-bold-font bp-gray-font" style="font-weight: bold;">PROMOCIONALES
                                             Y<br> DISEÑO</h2>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="h1-brand__content-video">
-                                        <video id="myVideo1" loop="" autoplay="" muted="">
+                                        <!-- <video id="myVideo1" loop="" autoplay="" muted="">
                                             <source src="https://rrdevs.net/project-video/ruhe-banner-video.mp4"
                                                 type="video/mp4">
-                                        </video>
+                                        </video> -->
                                     </div>
                                 </div>
 
@@ -214,7 +214,7 @@
                     .custom-prev,
                     .custom-next {
                         position: absolute;
-                        top: 60% !important;
+                        top: 48% !important;
                         transform: translateY(-50%);
                         z-index: 10;
                         /*background: rgba(255, 255, 255, 0.95);*/
@@ -252,10 +252,12 @@
 
                     /* Responsivo: acerca un poco las flechas en móviles */
                     @media (max-width: 992px) {
+
                         .custom-prev,
                         .custom-next {
-                            top: 60% !important;
+                            top: 45% !important;
                         }
+
                         .custom-prev {
                             left: -30px;
                         }
@@ -286,7 +288,7 @@
                 <section id="trabajos" class="team-wrapper fix section-bg section-padding">
                     <div class="container rr-container-1230">
                         <h2 class="to-din-bold-font" style="font-size: 60px;">
-                            Servicios
+                            SERVICIOS
                         </h2>
                         <div class="swiper-button-prev custom-prev"></div>
                         <div class="swiper-button-next custom-next"></div>
@@ -297,9 +299,10 @@
                                 <div class="swiper-slide">
                                     <div class="single-team-member-3 single-team-member-3-1 bg-center bg-cover">
                                         <div class="member-info-card">
-                                            <img src = "assets/imgs/servicios/diseño.svg" alt="diseño"/>
+                                            <img src="assets/imgs/servicios/diseño.svg" height="175" width="175"
+                                                alt="diseño" />
                                             <div class="content">
-                                                <h4 class="white-font">Diseño</h4>
+                                                <h4 class="white-font to-din-font">Diseño</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -308,9 +311,11 @@
                                 <div class="swiper-slide">
                                     <div class="single-team-member-3 single-team-member-3-2 bg-center bg-cover">
                                         <div class="member-info-card">
-                                            <img src="assets/imgs/servicios/impresion-personalizacion.svg" height="175" width="175" alt="diseño"/>
+                                            <img src="assets/imgs/servicios/impresion-personalizacion.svg" height="175"
+                                                width="175" alt="diseño" />
                                             <div class="content">
-                                                <h4 class="white-font">Soluciones de impresión y personalización</h4>
+                                                <h4 class="white-font to-din-font">Soluciones de impresión y
+                                                    personalización</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -319,9 +324,10 @@
                                 <div class="swiper-slide">
                                     <div class="single-team-member-3 single-team-member-3-3 bg-center bg-cover">
                                         <div class="member-info-card">
-                                            <img src = "assets/imgs/servicios/impresion-editorial.svg" height="175" width="175" alt="diseño"/>
+                                            <img src="assets/imgs/servicios/impresion-editorial.svg" height="175"
+                                                width="175" alt="diseño" />
                                             <div class="content">
-                                                <h4 class="white-font">Impresión editorial</h4>
+                                                <h4 class="white-font to-din-font">Impresión editorial</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -330,9 +336,10 @@
                                 <div class="swiper-slide">
                                     <div class="single-team-member-3 single-team-member-3-1 bg-center bg-cover">
                                         <div class="member-info-card">
-                                            <img src = "assets/imgs/servicios/Promocionales.svg" alt="diseño"/>
+                                            <img src="assets/imgs/servicios/Promocionales.svg" height="175" width="175"
+                                                alt="diseño" />
                                             <div class="content">
-                                                <h4 class="white-font">Promocionales</h4>
+                                                <h4 class="white-font to-din-font">Promocionales</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -341,9 +348,10 @@
                                 <div class="swiper-slide">
                                     <div class="single-team-member-3 single-team-member-3-2 bg-center bg-cover">
                                         <div class="member-info-card">
-                                            <img src = "assets/imgs/servicios/Serigrafia.svg" alt="diseño"/>
+                                            <img src="assets/imgs/servicios/Serigrafia.svg" height="175" width="175"
+                                                alt="diseño" />
                                             <div class="content">
-                                                <h4 class="white-font">Serigrafía</h4>
+                                                <h4 class="white-font to-din-font">Serigrafía</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -352,9 +360,10 @@
                                 <div class="swiper-slide">
                                     <div class="single-team-member-3 single-team-member-3-3 bg-center bg-cover">
                                         <div class="member-info-card">
-                                            <img src = "assets/imgs/servicios/textiles.svg" alt="diseño"/>
+                                            <img src="assets/imgs/servicios/textiles.svg" height="175" width="175"
+                                                alt="diseño" />
                                             <div class="content">
-                                                <h4 class="white-font">Textiles</h4>
+                                                <h4 class="white-font to-din-font">Textiles</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -366,75 +375,66 @@
                     </div>
                 </section>
 
-                <!-- <section id="trabajos" class="team-wrapper fix section-bg section-padding">
-
-                    <div class="container rr-container-1230">
-                        <h2 class="to-din-bold-font" style="font-size: 60px;">
-                            Servicios
-                        </h2>
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 col-xl-3">
-                                <div class="single-team-member-3 single-team-member-3-1 bg-center bg-cover">
-                                    <div class="member-info-card">
-                                        <div class="content">
-                                            <h4>Diseño</h4>
+                <section class="about-section-5 pt-100 pb-100"  style="background: #e1ab8f; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="container rr-container-1405">
+                        <div class="row gy-lg-0 gy-4">
+                            <div class="col-lg-6">
+                                <div class="about-content-5 fade-wrapper">
+                                    <div class="section-heading">
+                                        
+                                        <h2 style="font-size: 60px;" class="section-title to-din-bold-font" data-text-animation="fade-in-right" data-split="char"
+                                            data-duration="0.6" data-stagger="0.03">¿Buscas un producto perfecto para tu marca? </h2>
+                                    </div>
+                                    <div class="about-tab fade-top">
+                                        <!-- <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-home" type="button" role="tab"
+                                                    aria-controls="nav-home" aria-selected="true">Our Mission</button>
+                                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-profile" type="button" role="tab"
+                                                    aria-controls="nav-profile" aria-selected="false">Our
+                                                    Vision</button>
+                                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-contact" type="button" role="tab"
+                                                    aria-controls="nav-contact" aria-selected="false">Our Goal</button>
+                                            </div>
+                                        </nav> -->
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                aria-labelledby="nav-home-tab">
+                                                <!-- <h3 class="title">Digital Web Design Agency</h3> -->
+                                                <p class="mb-20 to-din-font bp-gray-font" style="font-size: xx-large;">
+                                                    Nuestro equipo creativo y de producción está listo para ayudarte a elegir el promocional o impreso que realmente impulse tu marca.
+                                                </p>
+                                                <p class="to-din-font mt-4 p-3 white-font purple-1-font bp-btn-primary" style="font-size: xx-large;border-radius: 15px;text-align: center;padding: 7px; font-weight: 700;width: 200px;">
+                                                    CONTÁCTANOS
+                                                </p>
+                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6 col-xl-3">
-                                <div class="single-team-member-3 single-team-member-3-2 bg-center bg-cover">
-                                    <div class="member-info-card">
-                                        <div class="content">
-                                            <h4>Soluciones de impresión y personalización</h4>
-
-                                        </div>
+                            <div class="col-lg-6">
+                                <!-- <div class="about-img-wrap-5">
+                                    <div class="shapes">
+                                        <div class="shape shape-1"><img
+                                                src="assets/imgs/modern-agency-2/about-shape-4.webp" alt="shape"></div>
+                                        <div class="shape shape-2"><img
+                                                src="assets/imgs/modern-agency-2/about-shape-5.webp" alt="shape"></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 col-xl-3">
-                                <div class="single-team-member-3 single-team-member-3-3 bg-center bg-cover">
-                                    <div class="member-info-card">
-                                        <div class="content">
-                                            <h4>Impresión editorial</h4>
-
-                                        </div>
+                                    <div class="about-img reveal">
+                                        <img class="img-1" src="assets/imgs/modern-agency-2/about-img-8.webp" alt="img">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 col-xl-3">
-                                <div class="single-team-member-3 single-team-member-3-1 bg-center bg-cover">
-                                    <div class="member-info-card">
-                                        <div class="content">
-                                            <h4>Promocionales</h4>
-
-                                        </div>
+                                    <div class="about-img-2 reveal">
+                                        <img class="img-2" src="assets/imgs/modern-agency-2/about-img-9.webp" alt="img">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 col-xl-3">
-                                <div class="single-team-member-3 single-team-member-3-2 bg-center bg-cover">
-                                    <div class="member-info-card">
-                                        <div class="content">
-                                            <h4>Serigrafía</h4>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 col-xl-3">
-                                <div class="single-team-member-3 single-team-member-3-3 bg-center bg-cover">
-                                    <div class="member-info-card">
-                                        <div class="content">
-                                            <h4>Textiles</h4>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                </section> -->
+                </section>
             </main>
             <!-- footer area start  -->
             <footer class="footer-area">

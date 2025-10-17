@@ -22760,7 +22760,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .h1-brand__content h2 {
-  font-size: 86px;
+  font-size: 100px;
   line-height: 106%;
   font-weight: bold;
   text-transform: uppercase;
@@ -22834,7 +22834,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .h1-brand__content-video {
   width: 670px;
-  height: 377px;
+  height: 300px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -25402,20 +25402,25 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .single-team-member-3-1::before {
 
-  /* background-color: #9479FF; */
-  background-color: #3c4363;
+  /* background-color: #9479FF; 
+  e1ab8f
+  */
+  background-color: #e5d4d3;
 }
 
 .single-team-member-3-2::before {
 
-  /* background-color: #ff5e14; */
-  background-color: #e5d4d3;
+  /* background-color: #ff5e14; 
+  #e5d4d3 Salmón 1
+#e1ab8f Salmón 2
+  */
+  background-color: #3c4363;
 }
 
 .single-team-member-3-3::before {
 
   /* background-color: #FFA6D6; */
-  background-color: #1d1d1b;
+  background-color: #e1ab8f;
 }
 
 .single-team-member-3:hover::before {
@@ -29729,7 +29734,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .section-heading {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   position: relative;
   z-index: 1;
 }
