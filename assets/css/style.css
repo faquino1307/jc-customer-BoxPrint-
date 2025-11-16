@@ -22744,7 +22744,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .h1-brand__area .swiper .swiper-wrapper .swiper-slide {
-  width: auto !important;
+  /* width: auto !important; */
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
