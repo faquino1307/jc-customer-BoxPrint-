@@ -159,7 +159,7 @@
                                             <h2 class="portfolio-3__content-title to-din-bold-font white-font"><a>
                                                     IMPRIME
                                                     <br>PERSONALIZA
-                                                <br>DESTACA
+                                                    <br>DESTACA
                                             </h2>
                                             <p class="to-din-font white-font">Soluciones creativas en artículos
                                                 <br>promocionales y materiales impresos
@@ -190,12 +190,12 @@
                                     <div class="h1-brand__content ">
                                         <!-- <h2 class="to-din-bold-font bp-gray-font" style="font-weight: bold;">PROMOCIONALES
                                             Y<br> DISEÑO</h2> -->
-                                            <img src="/assets/imgs/TEXTO-CARRUSEL-2.svg">
+                                        <img src="/assets/imgs/TEXTO-CARRUSEL-2.svg">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="h1-brand__content-video">
-                                        
+
                                         <!-- <video id="myVideo1" loop="" autoplay="" muted="">
                                             <source src="https://rrdevs.net/project-video/ruhe-banner-video.mp4"
                                                 type="video/mp4">
@@ -296,7 +296,7 @@
                         <div class="swiper-button-next custom-next"></div>
                         <!-- Swiper -->
                         <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper jobsServices">
                                 <!-- Cada servicio es un "swiper-slide" -->
                                 <div class="swiper-slide">
                                     <div class="single-team-member-3 single-team-member-3-1 bg-center bg-cover">
@@ -377,15 +377,17 @@
                     </div>
                 </section>
 
-                <section class="about-section-5 pt-100 pb-100"  style="background: #e1ab8f; padding-top: 50px; padding-bottom: 50px;">
+                <section class="about-section-5 pt-100 pb-100"
+                    style="background: #e1ab8f; padding-top: 50px; padding-bottom: 50px;">
                     <div class="container rr-container-1405">
                         <div class="row gy-lg-0 gy-4">
                             <div class="col-lg-6">
                                 <div class="about-content-5 fade-wrapper">
                                     <div class="section-heading">
-                                        
-                                        <h2 style="font-size: 60px;" class="section-title to-din-bold-font" data-text-animation="fade-in-right" data-split="char"
-                                            data-duration="0.6" data-stagger="0.03">¿Buscas un producto perfecto para tu marca? </h2>
+
+                                        <h2 style="font-size: 60px;" class="section-title to-din-bold-font"
+                                            data-text-animation="fade-in-right" data-split="char" data-duration="0.6"
+                                            data-stagger="0.03">¿Buscas un producto perfecto para tu marca? </h2>
                                     </div>
                                     <div class="about-tab fade-top">
                                         <!-- <nav>
@@ -407,13 +409,15 @@
                                                 aria-labelledby="nav-home-tab">
                                                 <!-- <h3 class="title">Digital Web Design Agency</h3> -->
                                                 <p class="mb-20 to-din-font bp-gray-font" style="font-size: xx-large;">
-                                                    Nuestro equipo creativo y de producción está listo para ayudarte a elegir el promocional o impreso que realmente impulse tu marca.
+                                                    Nuestro equipo creativo y de producción está listo para ayudarte a
+                                                    elegir el promocional o impreso que realmente impulse tu marca.
                                                 </p>
-                                                <p class="to-din-font mt-4 p-3 white-font purple-1-font bp-btn-primary" style="font-size: xx-large;border-radius: 15px;text-align: center;padding: 7px; font-weight: 700;width: 200px;">
+                                                <p class="to-din-font mt-4 p-3 white-font purple-1-font bp-btn-primary"
+                                                    style="font-size: xx-large;border-radius: 15px;text-align: center;padding: 7px; font-weight: 700;width: 200px;">
                                                     CONTÁCTANOS
                                                 </p>
                                             </div>
-                                           
+
                                         </div>
                                     </div>
                                 </div>
@@ -526,6 +530,23 @@
             </footer>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 to-din-font" id="servicesModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body to-din-font">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary to-din-bold-font" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/vendor/bootstrap.bundle.min.js"></script>
@@ -552,27 +573,81 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,  /* cuántos servicios mostrar al mismo tiempo */
-            spaceBetween: 20,  /* espacio entre tarjetas */
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                320: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
-            }
+        const modalServices = document.getElementById('servicesModal');
+        var jobsServices = [
+            { name: "Diseño", img: "diseño.svg", description: "Diseñamos la imagen que tu marca necesita para destacar. Desde logotipos e identidad corporativa hasta piezas para redes sociales, campañas publicitarias y diseño web, combinamos creatividad con estrategia para generar soluciones visuales funcionales, atractivas y coherentes con tu visión." },
+            { name: "Soluciones de impresión y personalización", img: "impresion-personalizacion.svg", description: "Personalizamos tus productos mediante técnicas especializadas como serigrafía, tampografía, grabado láser, sublimación, bordado y vinil textil, DTF, entre otros. Adaptamos cada solución al tipo de material, volumen y objetivo del proyecto, asegurando siempre un acabado profesional, duradero y alineado con la identidad de tu marca." },
+            { name: "Impresión editorial", img: "impresion-editorial.svg", description: "Creamos y gestionamos proyectos editoriales e impresos con calidad profesional, incluyendo folletos, catálogos, revistas, papelería corporativa, así como lonas, viniles, espectaculares y señalética. Ofrecemos soluciones flexibles y cuidadas, con atención en cada etapa para garantizar resultados que reflejen la esencia de tu marca." },
+            { name: "Promocionales", img: "Promocionales.svg", description: "En BoxPrint te ayudamos a fortalecer tu marca con artículos promocionales útiles, creativos y 100% personalizados. Contamos con una amplia variedad de productos como termos, libretas, plumas, mochilas, cilindros, bolsas ecológicas y más, seleccionados estratégicamente para campañas publicitarias, eventos corporativos, ferias o regalos empresariales. Cuidamos cada detalle para que el resultado final proyecte la calidad y personalidad de tu empresa." },
+            { name: "Serigrafía", img: "Serigrafia.svg", description: "Personalizamos tus productos mediante técnicas especializadas como serigrafía, tampografía, grabado láser, sublimación, bordado y vinil textil, DTF, entre otros. Adaptamos cada solución al tipo de material, volumen y objetivo del proyecto, asegurando siempre un acabado profesional, duradero y alineado con la identidad de tu marca." },
+            { name: "Textiles", img: "textiles.svg", description: "Transformamos textiles en piezas únicas que comunican tu marca con fuerza y estilo. Trabajamos sobre camisetas, gorras, sudaderas, uniformes, bolsas y más, aplicando técnicas como bordado, serigrafía, vinil y sublimación. Cada pieza se desarrolla con precisión y enfoque en durabilidad, diseño y fidelidad de color." }
+        ];
+
+        /*
+            <div class="swiper-slide">
+                                    <div class="single-team-member-3 single-team-member-3-1 bg-center bg-cover">
+                                        <div class="member-info-card">
+                                            <img src="assets/imgs/servicios/diseño.svg" height="175" width="175"
+                                                alt="diseño" />
+                                            <div class="content">
+                                                <h4 class="white-font to-din-font">Diseño</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        */
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            const swiperWrapper = document.querySelector(".jobsServices");
+            swiperWrapper.innerHTML = ""; // Limpiar contenido existente
+
+            jobsServices.forEach(service => {
+                const slide = document.createElement("div");
+                slide.classList.add("swiper-slide");
+
+                slide.innerHTML = `
+                    <div class="single-team-member-3 single-team-member-3-1 bg-center bg-cover">
+                        <div class="member-info-card">
+                            <img src="assets/imgs/servicios/${service.img}" height="175" width="175" alt="${service.name}" />
+                            <div class="content">
+                                <h4 class="white-font to-din-font">${service.name}</h4>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                slide.addEventListener("click", () => {
+                    // Aquí puedes cargar el contenido específico del servicio en el modal
+                    modalServices.querySelector('.modal-body').innerHTML = ''; // Limpiar contenido previo
+                    modalServices.querySelector('.modal-title').textContent = service.name;
+                    modalServices.querySelector('.modal-body').innerHTML += `<p>${service.description}</p>`;
+                    var modal = new bootstrap.Modal(modalServices);
+                    modal.show();
+                });
+                swiperWrapper.appendChild(slide);
+            });
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,  /* cuántos servicios mostrar al mismo tiempo */
+                spaceBetween: 20,  /* espacio entre tarjetas */
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                }
+            });
         });
     </script>
 
